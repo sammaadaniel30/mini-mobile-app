@@ -90,10 +90,10 @@ export default function ProfileScreen() {
         )}
       </View>
 
-      {/* Red button because it deletes data */}
+      {}
       <AppButton title="Clear Profile" variant="danger" onPress={clearProfile} />
 
-      {/* Grey button for navigation */}
+      {}
       <AppButton title="Back Home" variant="secondary" onPress={goHome} />
     </View>
   );
@@ -115,9 +115,9 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
 
-  // Small grey uppercase title ("NAME", "CITY")
+  // Small grey uppercase title
   label: { fontSize: 13, color: '#6b7280', textTransform: 'uppercase', marginTop: 8 },
 
-  // Big bold value ("Daniel", "Madrid")
+  // Big bold value 
   value: { fontSize: 20, fontWeight: '600', color: '#111827' },
 });
