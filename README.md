@@ -12,3 +12,34 @@ A small mobile app built with **React Native**, **Expo** and **Expo Router** for
 ### Extras
 - Search/filter users by name
 - Pull-to-refresh on the list
+
+## API used
+
+[JSONPlaceholder - Users](https://jsonplaceholder.typicode.com/users)
+
+Each user's `name` and `email` are shown in the list.
+
+## How to run
+
+1. Install the dependencies:
+   ```bash
+   npm install
+   ```
+2. Start the app:
+   ```bash
+   npm start
+   ```
+3. Scan the QR code with the **Expo Go** app on your phone, or press:
+   - `a` to open it on an Android emulator
+   - `i` to open it on an iOS simulator
+   - `w` to open it in the web browser
+
+## Screenshots
+
+| Home | Profile | API List | Details |
+|------|---------|----------|---------|
+| ![Home](screenshots/home.png) | ![Profile](screenshots/profile.png) | ![API List](screenshots/api-list.png) | ![Details](screenshots/details.png) |
+
+## Author
+
+Daniel Sama Clemente
