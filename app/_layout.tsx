@@ -8,7 +8,7 @@ import { useColorScheme } from '@/components/useColorScheme';
 
 export {
   // Catch any errors thrown by the Layout component.
-  ErrorBoundary,
+  ErrorBoundary
 } from 'expo-router';
 
 export const unstable_settings = {
@@ -48,8 +48,16 @@ function RootLayoutNav() {
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
       <Stack>
+        {/* The tabs group (Home + Tab Two). Its header is hidden because the tabs have their own */}
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+
+        {/* Template's info modal (opened from the "i" icon on Home) */}
         <Stack.Screen name="modal" options={{ presentation: 'modal' }} />
+
+        {/* Our screens: give each one a clear title instead of the file name */}
+        <Stack.Screen name="profile" options={{ title: 'Profile' }} />
+        <Stack.Screen name="api-list" options={{ title: 'Users' }} />
+        <Stack.Screen name="details" options={{ title: 'Details' }} />
       </Stack>
     </ThemeProvider>
   );
